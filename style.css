@@ -272,22 +272,25 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body, html {
     font-size: 15px;
     padding: 0;
     margin: 0;
+    width: 100% !important;
   }
   .container {
     padding: 8px;
+    width: 100%;
   }
   .section-one {
   grid-template-columns: 1fr;
-  width:100%;
+  width:100% !important;
   display: block;
 }
 .options{
   grid-template-columns: 1fr;
+  width: 100% !important;
 }
 .option4{
   grid-template-columns: 1fr;
@@ -298,13 +301,14 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
 .reservation ul li{
   display: block;
   margin-bottom: 10px;
+  width: 100% !important;
 }
 .country {
     grid-template-columns: 1fr 1fr;
   }
   .option4{
     grid-template-columns: 1fr 1fr 1fr;
-    gap:10px
+    gap:10px;
   }
   nav ul {
     flex-direction: column;
@@ -319,6 +323,8 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
   .reservation {
     padding: 0;
     margin: 0;
+    width: 100% !important;
+    box-sizing: border-box;
   }
   .one, .discount {
     display: flex;
