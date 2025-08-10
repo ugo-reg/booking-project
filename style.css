@@ -282,6 +282,24 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
   .container {
     padding: 8px;
   }
+  .section-one {
+    grid-template-columns: 1fr;
+  width:100%;
+display: block;
+}
+.options{
+  grid-template-columns: 1fr;
+}
+.option4{
+  grid-template-columns: 1fr;
+}
+.country {
+    grid-template-columns: 1fr 1fr;
+  }
+  .option4{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px
+  }
   nav ul {
     flex-direction: column;
     gap: 8px;
@@ -337,7 +355,7 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
     width: 60px;
     height: 60px;
   }
-  section.options, section.option2, section.option3, section.option4, .country {
+  section.options, section.option2, section.option3 {
     flex-direction: column;
     gap: 10px;
     padding: 0;
