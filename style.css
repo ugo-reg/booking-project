@@ -283,15 +283,22 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
     padding: 8px;
   }
   .section-one {
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   width:100%;
-display: block;
+  display: block;
 }
 .options{
   grid-template-columns: 1fr;
 }
 .option4{
   grid-template-columns: 1fr;
+}
+.options2{
+  grid-template-columns: 1fr ;
+}
+.reservation ul li{
+  display: block;
+  margin-bottom: 10px;
 }
 .country {
     grid-template-columns: 1fr 1fr;
@@ -367,5 +374,9 @@ display: block;
   img[alt="national park"] {
     height: 150px !important;
     width: 100% !important;
+  }
+  .imgae1{
+    width: 100% !important;
+    height: auto !important;
   }
 }
