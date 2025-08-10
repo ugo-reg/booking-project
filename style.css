@@ -26,7 +26,6 @@ line-height: 2rem;
 display: block;
 background-color: antiquewhite;
 border-radius: 10px;
-border: 1px solid grey;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .reservation button{
@@ -249,7 +248,7 @@ text-align: center;
 padding: 20px;
 }
 .form2{
-display:hide;
+display:none;
 }
 #add{
 background-color: antiquewhite;
@@ -273,7 +272,7 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   body, html {
     font-size: 15px;
     padding: 0;
@@ -375,7 +374,7 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
     height: 150px !important;
     width: 100% !important;
   }
-  .imgae1{
+  .image1{
     width: 100% !important;
     height: auto !important;
   }
