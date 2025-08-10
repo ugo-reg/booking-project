@@ -297,6 +297,8 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
 }
 .options2{
   grid-template-columns: 1fr ;
+  width: 100% !important;
+  align-items: center;
 }
 .reservation ul li{
   display: block;
@@ -309,6 +311,7 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
   .option4{
     grid-template-columns: 1fr 1fr 1fr;
     gap:10px;
+    align-items: center;
   }
   nav ul {
     flex-direction: column;
@@ -325,6 +328,7 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
     margin: 0;
     width: 100% !important;
     box-sizing: border-box;
+    align-items: center;
   }
   .one, .discount {
     display: flex;
@@ -379,9 +383,12 @@ box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
   img[alt="national park"] {
     height: 150px !important;
     width: 100% !important;
+    object-fit: cover;
+    align-items: center;
   }
   .image1{
     width: 100% !important;
     height: auto !important;
+    align-items: center;
   }
 }
