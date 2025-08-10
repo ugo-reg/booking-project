@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="sign.css" rel="stylesheet"/>
+    <title>Log in</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Luxury Booking Hub</h2>
+        <form id="loginForm">
+            <div>
+            <label>Username:
+                <input type="text" required autocomplete="off" placeholder="e.g jane grey"id="email"/>
+             </label>
+               </div>
+<div>
+            <label>Password: </label>
+                <input type="password" required autocomplete="off" id="passwordLogin" />
+           </div>
+            <input type="submit" value="submit" id="signin"/>
+       
+        </form>
+        <div class="createacc">
+            <p> if you do not have an sccount and would like to signup. click the link below</p>
+            <details> 
+                <summary>
+                   Sign up
+                </summary>
+                <form id="signupForm">
+                    <div>
+            <label for="name">Name:
+                        <input type="text" required autocomplete="off" placeholder="janet jhon"/>
+                    </label>
+                    </div>
+                    <div>
+                    <label>Age:
+                        <input type="age" required placeholder="19" />
+                    </label>
+                    </div>
+                    <div>
+                        <label for="emailSign">Email:
+                        <input type="email" required autocomplete="off" placeholder="example@example.com" id="emailSign"/>
+                        </label>
+                    </div>
+                    <div>
+                    <label for="password">Password
+                        <input type="password" minlength="8" required id="passwordSign"/>
+                    </label>
+                    </div>
+                    <div>
+                        <label for="confirmP">confirm Password:
+                            <input type="password" minlength="8" required id="confirmPassword"/>
+                        </label>
+                    </div>
+                    <input type="submit" value="Create Account" id="signup"/> 
+                    </form>
+            </detail>
+        </div>
+        <div>
+        <ul>
+            <li><button>VIP benefits</button></li>
+            <li><button>My Trips</button></li>
+            <li><button>My Account</button></li>
+            <li><button>Wallet</button></li>
+        </ul>
+        </div>
+    </div>
+</body>
+<script src="sign.js" type="module"></script>
+</html>
