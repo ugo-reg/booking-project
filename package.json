@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "@capacitor/android": "^7.4.2",
     "firebase": "^12.1.0"
-  }
+  },
+  "name": "booking-project",
+  "version": "1.0.0",
+  "main": "sign.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugo-reg/booking-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ugo-reg/booking-project/issues"
+  },
+  "homepage": "https://github.com/ugo-reg/booking-project#readme",
+  "description": ""
 }
