@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="public/style.css" />
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
             </li>
             <li><button>Packages</button></li>
             <li><button>Rental</button></li>
-             <button><a href="sign.html" target="_blank"> Sign in</a></button>
+             <button><a href="public/sign.html" target="_blank"> Sign in</a></button>
            </ul>
         </nav> 
         <hr/>
@@ -44,12 +44,12 @@
     <ul>
    <li> <button id="hotel"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-120v-560h160v-160h400v320h160v400H520v-160h-80v160H120Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 320h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Z"/></svg> Hotels</button>
 <form id="form-hotel" class="form2" style="display: block;">
-        <label for="service">
-        <input type="radio" name="service">
+        <label for="service1">
+        <input type="radio" name="service1" id="service1">
         single room
         </label>
         <label for="service" >
-<input  type="radio" name="service">
+<input  type="radio" name="service" id="service">
 double room
         </label>
         <div class="one">
@@ -166,13 +166,13 @@ round-trip
         <p><a href="https://www.masaimara.travel/" target="_blank">Learn more</a></p>
     </div>
     <div>
-        <img src="obudu pic.png" alt="image6" width="400px" height="250px">
+        <img src="public/obudu pic.png" alt="image6" width="400px" height="250px">
         <h2>Obudu Mountain Resort</h2>
         <p>A breathtaking tourist destination located in crossriver, Nigeria. Featuring stunning moountain landscapes and diverse recreational activities.</p>
         <p><a href="https://www.obudumountainresort.com/" target="_blank">Read more</a></p>
     </div>
      <div>
-        <img src="millenium-park-abuja.jpg" alt="image3" width="400px" height="250px">
+        <img src="public/millenium-park-abuja.jpg" alt="image3" width="400px" height="250px">
         <h2>millenium park</h2>
         <p>This ia a sprawling urban oasis tha offers a serene escape from the city's hustle and bustle.</p>
         <p><a href="https://en.wikipedia.org/wiki/Millennium_Park_(Abuja)" target="_blank">See more</a></p>
@@ -312,7 +312,7 @@ round-trip
     <p>thank you for allowing us be a part of your trip <br/>
     we can not wait to hear back from you.😉</p>
 </footer>
-<script src="style.js" type="module"></script>
+<script src="public/style.js" type="module"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.custom-dropdown').forEach(function(dropdown) {
