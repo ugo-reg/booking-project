@@ -31,8 +31,17 @@
             </li>
             <li><button>Packages</button></li>
             <li><button>Rental</button></li>
+            
              <button><a href="public/sign.html" target="_blank"> Sign in</a></button>
-           </ul>
+<div id="cart-icon">
+  🛒 <span id="cart-count" class="cart-count">0</span>
+</div>
+<div id="cart-panel" class="hidden"> 
+  <h3>Your Bookings</h3>
+  <ul id="cart-items" class="cart-items"></ul>
+<button id="checkout-btn">Checkout</button>
+</div>
+           </ul>       
         </nav> 
         <hr/>
 <header>
@@ -254,6 +263,44 @@ round-trip
      <li><a href="" target="_blank">Hotels</a></li>
      </ul>
 </div>
+<div class="countrys">
+            <h5><strong>Honeymoon</strong></h5>
+            <ul>
+                <li>+Romantic dinner </li>
+                <li>250/night</li>
+                <button onclick="addToCart(event)" data-item="Honeymoon">Add to cart</button>
+            </div>
+            <div class="countrys">
+                <h5><strong>Family trip</strong></h5>
+                <ul>
+                    <li>Family of 4</li>
+                    <li>500/night</li>
+                    <button onclick="addToCart(event)" data-item="Family trip">Add to cart</button>
+                    </ul>
+            </div>
+            <div class="countrys">
+                <h5><strong>Business Trip</strong></h5>
+                <ul>
+                    <li>breakfast included</li>
+                    <li>1000/night</li>
+                    <button onclick="addToCart(event)" data-item="Business trip">Add to cart</button>
+                </ul>
+                </div>
+                <div class="countrys">
+                    <h5><strong>Weekend getaway</strong></h5>
+                    <ul>
+                        <li>Weekend getaway</li>
+                        <li>150/night</li>
+                        <button onclick="addToCart(event)" data-item="Weekend getaway">Add to cart</button>
+                    </ul>
+                    </div>
+                    <div class="countrys">
+                        <h5><strong>Solo Trip</strong></h5>
+                        <ul>
+                            <li>solo</li>
+                            <li>300/night</li>
+                            <button onclick="addToCart(event)" data-item="Solo">Add to cart</button>
+                        </ul>
  </div>
 </section>
 
@@ -277,6 +324,7 @@ round-trip
             <li>Cruise</li>
         </ul>
     </div>
+        
      <div>
         <p><strong>About us</strong></p>
         <ul>
@@ -309,8 +357,8 @@ round-trip
 <p>hello</p>
 </section>
 <footer>
-    <p>thank you for allowing us be a part of your trip <br/>
-    we can not wait to hear back from you.😉</p>
+    <p>Thank you for allowing us be a part of your trip. <br/>
+    We can not wait to hear back from you.😉</p>
 </footer>
 <script src="public/style.js" type="module"></script>
 <script>
@@ -350,7 +398,44 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-<script type="module" src="mobile.js"></script>
+<script type="module" src="public/mobile.js"></script>
 
+<script>
+     const cartIcon = document.getElementById("cart-icon");
+  const cartPanel = document.getElementById("cart-panel");
+   let cartItem = [];
+  const cartItems = document.getElementById("cart-items");
+  const cartCount = document.getElementById("cart-count");
+    
+document.addEventListener("DOMContentLoaded", () => {
+
+  cartIcon.addEventListener("click", () => {
+   if (cartPanel.style.display === 'none'){
+    cartPanel.style.display = 'block';
+   }else {
+    cartPanel.style.display ='none'
+   }
+  });
+});
+
+function addToCart(event) {
+    const item = event.target.getAttribute("data-item");
+    const newItem = document.createElement("li");
+    newItem.textContent = item;
+    cartItems.appendChild(newItem);
+
+    const currentCount = parseInt(cartCount.textContent, 10);
+    cartCount.textContent = currentCount + 1;
+
+    cartPanel.classList.remove("hidden");
+    
+    const checkoutBtn = document.getElementById("checkout-btn");
+    checkoutBtn.style.display = "block";
+    checkoutBtn.addEventListener("click", () => {
+        alert("Proceeding to checkout...");
+    });
+}
+
+</script>
 </body>
 </html>
