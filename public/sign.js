@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function(){
         signupForm.addEventListener("submit", function(event){
             event.preventDefault();
             const emailS = document.getElementById("emailSign").value;
-            const passwordS = document.getElementById("passwordSignup").value;
+            const passwordS = document.getElementById("passwordSign").value;
             const confirmPassword = document.getElementById("confirmPassword").value;
 createUserWithEmailAndPassword(auth, emailS, passwordS)
                 .then((userCredential) => {
-                  
+                
                     const user = userCredential.user;
                     console.log("User signed up:", user);
                 })
