@@ -326,7 +326,7 @@ round-trip
     </div>
         
      <div>
-        <p><strong>About us</strong></p>
+        <p><a href="public/aboutUs.html"><strong>About us</strong></a></p>
         <ul>
             <li>Contact us</li>
             <li>Our story</li>
@@ -400,7 +400,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <script type="module" src="public/mobile.js"></script>
 
-<script> const cartIcon = document.getElementById("cart-icon");
+<script> 
+const cartIcon = document.getElementById("cart-icon");
  const cartPanel = document.getElementById("cart-panel");
  let cartItem = [];
  const cartItems = document.getElementById("cart-items");
@@ -446,7 +447,8 @@ cart.addEventListener("dblclick", function (event) {
       document.getElementById("checkout-btn").style.display = "none";
     }
   }
-});</script>
+});
+</script>
 </script>
 </body>
 </html>

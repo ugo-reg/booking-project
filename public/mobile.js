@@ -5,7 +5,7 @@ const initializeDeviceUI = async () => {
   const info = await Device.getInfo();
   console.log('Platform:', info.platform);
 
-  // Clear any previously added class
+  
   document.body.classList.remove('android', 'ios', 'web');
 
   switch (info.platform) {
