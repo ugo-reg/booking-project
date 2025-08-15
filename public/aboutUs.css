@@ -29,7 +29,7 @@ nav ul li a:hover{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: rgba(60,64,67,0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ 
     border-radius: 10px;
 }
 .about{
@@ -89,4 +89,55 @@ font-size: 20px;
 h4{
 margin-bottom: 10px;
 font-size: 24px;
+}
+a{
+ color:black;
+}
+a:hover{
+ text-decoration: underline;
+ color:blueviolet;
+ font-size: 26px;
+}
+.footer{
+ color:whitesmoke;
+ background-color: black;
+ padding:10px;
+ line-height: 0.5;
+ font-size: 20px;
+ text-align: center;
+ }
+ .footer a{
+ color:white;
+ }
+ footer{
+ background-color: grey;
+}
+
+@media (max-width:600px){
+    .about{
+        display:block;
+         justify-content: center;
+    align-items: center;
+    }
+    .mission{
+        display:block;
+        align-items: center;
+        justify-content: center;
+    }
+    .team{
+        display:block;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    img{
+    width: 100% !important;
+    height: auto !important;
+    align-items: center;
+    }
+  
+    
 }
