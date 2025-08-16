@@ -90,7 +90,7 @@ gap:40px;
 }
 .reservation input{
   padding:5px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 .reservation button:hover{
 background-color: aqua;
@@ -344,8 +344,12 @@ body.ios .header{
 
 body.android .android-only { display: inline; }
 body.ios .ios-only { display: inline; }
+h4{
+  margin-bottom: 10px;
+  font-size: 24px;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   body, html {
     font-size: 15px;
     padding: 0;
@@ -354,7 +358,7 @@ body.ios .ios-only { display: inline; }
   }
   .container {
     padding: 8px;
-    width: 100%;
+    width: 400px;
   }
   .section-one {
   grid-template-columns: 1fr;
